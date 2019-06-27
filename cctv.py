@@ -4,7 +4,7 @@ import requests
 
 from bs4 import BeautifulSoup as bs
 
-r = requests.get("https://www.cctv.com")
+r = requests.get("https://www.163.com")
 
 r.encoding = r.apparent_encoding
 
