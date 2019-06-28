@@ -9,7 +9,10 @@ proxy_handler = ProxyHandler({
     'http': 'http://127.0.0.1:9743',
     'https': 'https://127.0.0.1:9743'
 })
-
+headers = {
+    'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)',
+    'Host': 'httpbin.org'
+}
 
 p = HTTPPasswordMgrWithDefaultRealm()
 p.add_password(None, url, username, password)
