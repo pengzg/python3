@@ -1,0 +1,500 @@
+   55  svn revert ./src/pages/promotion/comPackageDetail.wpy
+   56  svn commit -m "d"
+   57  npm run build
+   58  svn commit -m "d"
+   59  npm run build
+   60  svn commit -m "d"
+   61  npm run build
+   62  npm run build
+   63  npm run build
+   64  npm run build
+   65  npm run build
+   66  npm run build
+   67  npm run build
+   68  npm run build
+   69  svn commit -m "group-modify"
+   70  npm run build
+   71  svn up 
+   72  svn commit -m "d"
+   73  npm run build
+   74  npm run build
+   75  npm run build
+   76  npm run build
+   77  svn up 
+   78  npm run build
+   79  svn commit -m "sharepic"
+   80  npm run build
+   81  npm run build
+   82  npm run build
+   83  npm run build
+   84  git pull
+   85  git add .
+   86  git push -u origin master
+   87  git commit -m "video"
+   88  git push -u origin master
+   89  git add .
+   90  git commit -m "d"
+   91  git push -u origin master
+   92  npm run build
+   93  npm run dev 
+   94  svn commit -m "style"
+   95  npm run build
+   96  ls
+   97  cd dist/
+   98  rm -rf *
+   99  cd ../
+  100  npm run build
+  101  svn commit -m "d"
+  102  npm run build
+  103  npm run build
+  104  ls
+  105  cd dist/
+  106  ls
+  107  rm -rf *
+  108  cd ../
+  109  npm run build
+  110  npm run build
+  111  npm run build
+  112  npm run build
+  113  npm run build
+  114  npm run build
+  115  npm run build
+  116  npm run build
+  117  svn commit -m "d"
+  118  npm run build
+  119  npm run build
+  120  npm run build
+  121  npm run dev
+  122  npm run build
+  123  npm run build
+  124  npm run build
+  125  svn commit -m "d"
+  126  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket
+  127  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket
+  128  svn commit -m "d"
+  129  svn commit -m "d"
+  130  svn commit -m "d"
+  131  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket/ctr_materialCodeList.js
+  132  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket/ctr_materialCodeList.js
+  133  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket/materialProductList.html
+  134  svn commit -m "d"
+  135  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket/materialCodeList.html
+  136  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket/materialCodeList.html
+  137  svn commit -m "d"
+  138  svn commit -m "d"
+  139  svn commit -m "d"
+  140  svn commit -m "d"
+  141  svn commit -m "mt"
+  142  svn commit -m "mt"
+  143  svn commit -m "mt"
+  144  svn commit -m "mt"
+  145  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket/ctr_materialProductAdd.js
+  146  svn commit -m "mtpa"
+  147  svn commit -m "mtpa"
+  148  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket/ctr_materialProductAdd.js
+  149  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket/ctr_materialProductList.js
+  150  svn commit -m "d"
+  151  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket/materialProductAdd.html
+  152  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket/materialProductAdd.html
+  153  svn commit -m "d"
+  154  svn up 
+  155  svn commit -m "d"
+  156  svn commit -m "d"
+  157  svn commit -m "d"
+  158  svn up 
+  159  svn commit -m "d"
+  160  svn commit -m "d"
+  161  svn commit -m "d"
+  162  svn up 
+  163  svn commit -m "d"
+  164  svn commit -m "d"
+  165  svn up *
+  166  svn up 
+  167  svn commit -m "d"
+  168  svn commit -m "d"
+  169  svn commit -m "d"
+  170  svn commit -m "d"
+  171  svn commit -m  "d"
+  172  svn commit -m  "d"
+  173  svn up 
+  174  svn commit -m "s"
+  175  npm run build
+  176  npm run dev
+  177  npm run build
+  178  npm run build
+  179  npm run build
+  180  npm run build
+  181  npm run build
+  182  svn up *
+  183  svn commit -m "d"
+  184  svn commit -m "d"
+  185  npm run build
+  186  npm run build
+  187  svn commit -m "d"
+  188  svn commit -m "d"
+  189  npm run build
+  190  npm run build
+  191  svn up 
+  192  npm run build
+  193  svn commit -m "d"
+  194  svn commit -m "d"
+  195  svn up 
+  196  npm run build
+  197  svn commit -m "d"
+  198  svn up *
+  199  npm run build
+  200  svn commit -m "d"
+  201  svn up *
+  202  svn commit -m "d"
+  203  svn commit -m "d"
+  204  svn commit -m "d"
+  205  svn up 
+  206  npm run build
+  207  npm run build
+  208  svn up *
+  209  svn commit -m "d"
+  210  npm run build
+  211  svn add /Users/pengzongge/work/sqhz_ui/sss_wechat_ui/src/pages/member/getMeterialTicket.wpy
+  212  svn commit -m "d"
+  213  svn add /Users/pengzongge/work/sqhz_ui/sss_wechat_ui/src/pages/member/getMaterialTicket.wpy
+  214  svn delete /Users/pengzongge/work/sqhz_ui/sss_wechat_ui/src/pages/member/getMeterialTicket.wpy
+  215  svn commit -m "d"
+  216  svn delete /Users/pengzongge/work/sqhz_ui/sss_wechat_ui/src/pages/member/getMeterialTicket.wpy
+  217  svn commit -m "de"
+  218  npm run build
+  219  npm run build
+  220  svn commit -m "de"
+  221  npm run dev 
+  222  svn up *
+  223  svn commit -m "d"
+  224  npm run build
+  225  npm run build
+  226  svn commit -m "d"
+  227  npm run build
+  228  svn commit -m "d"
+  229  svn commit -m "d"
+  230  npm run build
+  231  svn commit -m "d"
+  232  svn commit -m "d"
+  233  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/product/materialticket
+  234  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/product/materialticket
+  235  svn commit -m "modify_path"
+  236  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/order/materialticket
+  237  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/order/materialticket
+  238  svn commit -m "del_mtc"
+  239  svn up *
+  240  svn commit -m "d"
+  241  svn up *
+  242  svn up 
+  243  svn up *
+  244  svn commit -m "d"
+  245  svn commit -m "d"
+  246  svn commit -m "d"
+  247  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/export
+  248  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/export
+  249  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/angularjs/router.config.export.js
+  250  svn commit -m "export"
+  251  svn commit -m "export"
+  252  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/export/exportOrder.htm
+  253  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/export/exportOrder.html
+  254  svn commit -m "d"
+  255  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/export/exportOrder.htm
+  256  svn commit -m "d"
+  257  svn commit -m "d"
+  258  svn commit -m "d"
+  259  svn commit -m "d"
+  260  svn commit -m "d"
+  261  svn commit -m "d"
+  262  svn commit -m "d"
+  263  svn commit -m "si"
+  264  svn commit -m "si"
+  265  svn commit -m "si"
+  266  svn commit -m "si"
+  267  svn commit -m "si"
+  268  svn commit -m "si"
+  269  svn revert js/controllerRoute/export
+  270  svn commit -m "d"
+  271  svn revert js/controllerRoute/export/*
+  272  svn revert js/controllerRoute/export/ctr_*
+  273  svn revert js/controllerRoute/export/ctr_exportOrder.js
+  274  svn revert js/controllerRout
+  275  svn revert js/controllerRoute/export/ctr_exportTicket.js
+  276  svn revert js/controllerRoute/export/ctr_exportTicketDetail.js
+  277  svn revert js/controllerRoute/export/ctr_exportBoxo.js
+  278  svn revert js/controllerRoute/export/ctr_exportBox.js
+  279  svn revert js/controllerRoute/export/ctr_exportBoxDetail.js
+  280  svn revert js/controllerRoute/export/ctr_exportMember.js
+  281  svn up *
+  282  svn up *
+  283  svn commit -m "d"
+  284  svn commit -m "d"
+  285  svn up *
+  286  svn commit -m "d"
+  287  svn commit -m "d"
+  288  svn up 
+  289  svn commit -m "d"
+  290  cd work/sqhz_dbh/
+  291  cd sqkx_order/
+  292  svn up *
+  293  svn commit -m "d"
+  294  svn commit -m "d"
+  295  svn commit -m "d"
+  296  svn commit -m "d"
+  297  cd ../
+  298  cd sqhz_mobile_work/
+  299  svn up *
+  300  svn commit -m "d"
+  301  cd ../
+  302  svn commit -p "接口及订单报表" sqhz_publib/
+  303  svn commit -m "接口及订单报表" sqhz_publib/
+  304  cd sqkx_order/
+  305  svn commit -m "d"
+  306  cd work/
+  307  cd sqhz_dbh/
+  308  ls
+  309  svn up *
+  310  cd sqhz_common/
+  311  ls
+  312  svn commit -m "d"
+  313  cd ../
+  314  cd sqkx_order/
+  315  svn up *
+  316  svn commit -m "d"
+  317  cd ../
+  318  svn commit -m "d" sqhz_publib/
+  319  cd sqkx_order/
+  320  svn up *
+  321  svn commit -m "d"
+  322  svn commit -m "d"
+  323  cd ../
+  324  svn commit -m "d" sqhz_publib/
+  325  svn up *
+  326  cd work/sqhz_dbh/
+  327  svn up *
+  328  svn up *
+  329  svn up 
+  330  svn up *
+  331  svn commit -m "pub" sqhz_publib/
+  332  svn up 
+  333  svn commit -m "d"
+  334  svn commit -m "d"
+  335  svn commit -m "d"
+  336  svn commit -m "d"
+  337  svn commit -m "d"
+  338  svn commit -m "d"
+  339  svn commit -m "d"
+  340  svn commit -m "d"
+  341  svn commit -m "d"
+  342  svn commit -m "d"
+  343  svn commit -m "d"
+  344  svn commit -m "d"
+  345  svn commit -m "d"
+  346  svn commit -m "d"
+  347  svn commit -m "d"
+  348  svn commit -m "d"
+  349  svn commit -m "d"
+  350  svn commit -m "d"
+  351  svn commit -m "d"
+  352  svn commit -m "d"
+  353  svn commit -m "d"
+  354  svn commit -m "d"
+  355  svn commit -m "d"
+  356  svn commit -m "d"
+  357  svn commit -m "d"
+  358  svn commit -m "d"
+  359  svn commit -m "d"
+  360  svn commit -m "d"
+  361  svn up *
+  362  npm run build
+  363  svn commit -m "d"
+  364  npm run build
+  365  svn commit -m "d"
+  366  svn commit -m "d"
+  367  git add .
+  368  git commit -m "pt-video"
+  369  git push -u origin master
+  370  svn commit -m "d"
+  371  svn up 
+  372  svn up 
+  373  svn commit -m "d"
+  374  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/setup/basesetting
+  375  svn add 
+  376  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/setup/basesetting
+  377  svn commit -m "d"
+  378  svn commit -m "d"
+  379  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/setting/base/basesetting
+  380  svn delete /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/setting/base/basesetting
+  381  svn commit -m "setting"
+  382  svn up *
+  383  svn commit -m "d"
+  384  svn commit -m "d"
+  385  svn commit -m "d"
+  386  svn commit -m "d"
+  387  svn commit -m "d"
+  388  svn commit -m "d"
+  389  svn commit -m "d"
+  390  svn commit -m "d"
+  391  svn commit -m "d"
+  392  svn commit -m "d"
+  393  svn commit -m "d"
+  394  svn commit -m "d"
+  395  svn up *
+  396  svn commit -m "d"
+  397  svn commit -m "d"
+  398  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/views/setting/base/basestorehouse/boxTest.html
+  399  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/setting/base/basestorehouse/ctr_boxTest.js
+  400  svn up *
+  401  svn commit -m "d"
+  402  svn commit -m "d"
+  403  git pull
+  404  git add .
+  405  git commit -m "ba"
+  406  git push -u origin master
+  407  git add .
+  408  git commit -m "d"
+  409  git push -u origin master
+  410  git add .
+  411  git commit -m "test"
+  412  git push  -u origin master
+  413  git pull
+  414  git add .
+  415  git commit -m "d"
+  416  git push -u origin master
+  417  git add .
+  418  git commit -m "test"
+  419  git push -u origin master
+  420  git add .
+  421  git commit -m "d"
+  422  git push -u origin master
+  423  git add .
+  424  git commit -m "d"
+  425  git push -u origin master
+  426  git add .
+  427  git commit -m "d"
+  428  git push -u origin master
+  429  svn up 
+  430  svn commit -m "d"
+  431  svn up *
+  432  svn commit -m "d"
+  433  npm run build
+  434  npm run build
+  435  svn up *
+  436  npm run build
+  437  svn up *
+  438  svn commit -m "mb-filter-shopid"
+  439  svn commit -m "ma-filter-shopid"
+  440  svn commit -m "ma-filter-shopid"
+  441  npm run build
+  442  npm run dev
+  443  npm run build
+  444  npm run dev
+  445  npm run build
+  446  svn commit -m "modifty"
+  447  npm run build
+  448  svn up 
+  449  svn commit -m "d"
+  450  cd work/
+  451  git clone https://github.com/pengzg/python3.git python3
+  452  cd python3/
+  453  ls
+  454  python cctv.py 
+  455  cd /usr/local/
+  456  ls
+  457  cd Cellar/
+  458  ls
+  459  cd python/
+  460  ls
+  461  cd 3.7.3/
+  462  ls
+  463  cd share/
+  464  ls
+  465  cd ../
+  466  ls
+  467  cd lib
+  468  ls
+  469  cd pkgconfig/
+  470  ls
+  471  cd ../
+  472  ls
+  473  cd ../
+  474  ls
+  475  cd bin/
+  476  ls
+  477  ls -al
+  478  cd ../
+  479  cd ../
+  480  cd ../
+  481  npm run build
+  482  svn up *
+  483  svn up *
+  484  svn commit -m "d"
+  485  svn up *
+  486  svn commit -m "d"
+  487  svn commit -m "d"
+  488  svn add /Users/pengzongge/work/sqhz_ui/sqhz_marketing_ui/js/controllerRoute/setting/base/basestorehouse/ctr_boxProduct.js
+  489  svn add .views/setting/base/basestorehouse/boxProduct.html
+  490  svn add ./views/setting/base/basestorehouse/boxProduct.html
+  491  svn commit -m "d"
+  492  svn commit -m "d"
+  493  svn commit -m "d"
+  494  svn commit -m "d"
+  495  svn commit -m "d"
+  496  cd work/sqhz_ui/
+  497  ls
+  498  svn up *
+  499  /usr/local/opt/python/bin/python3.7 -m pip install -U pylint --user
+  500  python qb.py 
+  501  python qb.py
+  502  python3 qb.py
+  503  sudo pip3 install requests
+  504  python3 qb.py
+  505  sudo pip3 install beautifulsoup4
+  506  python3 qb.py
+  507  sudo pip3 install lxml
+  508  python3 qb.py
+  509  git add .
+  510  git commit -m "test"
+  511  git push -u origin maser
+  512  git push -u origin master
+  513  python3 cctv.py 
+  514  python3 cctv.py 
+  515  python3 cctv.py 
+  516  python3 cctv.py 
+  517  python3 cctv.py 
+  518  python3 cctv.py 
+  519  python3 urllib.py 
+  520  sudo pip3 install urllib
+  521  chmod u+x urllib.py 
+  522  sudo pip3 install urllib
+  523  python3 urllib.py 
+  524  python3 urllibtest.py 
+  525  git add .
+  526  git commit -m "urllib" 
+  527  git push -u origin master
+  528  python3 urllibtest.py 
+  529  python3 urllibtest.py 
+  530  python3 urllibtest.py 
+  531  git add .
+  532  git commit -m "type"
+  533  git push -u origin master
+  534  python3 urllibtest.py 
+  535  python3 urllibtest.py 
+  536  python3 urllibtest.py 
+  537  python3 urllibtest.py 
+  538  python3 urllibtest.py 
+  539  python3 urllibtest.py 
+  540  python3 urllibtest.py 
+  541  git add .
+  542  git commit -m "http"
+  543  git push -u origin master
+  544  python3 urllibreqtest.py 
+  545  git add .
+  546  git commit -m 'request'
+  547  git push -u origin master
+  548  git push -u origin master
+  549  python3 urllibreqtest.py 
+  550  python3 qb.py 
+  551  git add .
+  552  git commit -m "reqt"
+  553  git push -u origin master
+  554  history >> history3.txt
