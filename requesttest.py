@@ -77,5 +77,27 @@ print('==============wb=====================')
 r = requests.get('https://github.com/favicon.ico')
 with open('favicon.ico', 'wb') as f :
     f.write(r.content)
+print('==============知乎不传headers=====================')
+r = requests.get('https://www.zhihu.com/explore')
+print(r.text)
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36'
+}
+r = requests.get("https://www.zhihu.com/explore", headers=headers)
+print(r.text)
 
+print('==============POST=====================')
 
+data = {
+    'name':'lee',
+    'age': '22'
+}
+r = requests.post('http://httpbin.org/post', data=data)
+print(r.text)
+data = {'name': 'germey', 'age': '22'}
+data = {
+    'name':'lee',
+    'age': '22'
+}
+r = requests.post("http://httpbin.org/post", data=data)
+print(r.text)
