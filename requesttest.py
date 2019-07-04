@@ -50,4 +50,12 @@ data = {
 r = requests.get('https://httpbin.org/get', params=data)
 print(r.text)
 
+print('==========json=============')
+r = requests.get('http://httpbin.org/get')
+print(type(r.text))
+print(r.json())
+print(type(r.json()))
+
+
+
 
