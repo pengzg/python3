@@ -2,6 +2,7 @@ import requests
 from requests.packages import urllib3
 from requests.auth import HTTPBasicAuth
 from requests_oauthlib import OAuth1
+from requests import Request, Session
 
 requests.get('http://httpbin.org/cookies/set/number/12345678')
 r = requests.get('http://httpbin.org/cookies')
@@ -60,7 +61,21 @@ print(r.status_code)
 
 print('============================OAuth1======================================')
 url = 'https://api.twitter.com/1.1/account/verify_credentials.json'
-auth = OAuth1('YOUR_APP_KEY', 'YOUR_APP_SECRET',
-              'USER_OAUTH_TOKEN', 'USER_OAUTH_TOKEN_SECRET')
-requests.get(url, auth=auth)
+#auth = OAuth1('YOUR_APP_KEY', 'YOUR_APP_SECRET', 'USER_OAUTH_TOKEN', 'USER_OAUTH_TOKEN_SECRET')
+#requests.get(url, auth=auth)
 
+print('========================Prepared Request============================')
+url = 'http://httpbin.org/post'
+data = {
+    'name':'germey'
+}
+
+headers = {
+    'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'
+}
+
+s = Session()
+req = Request('POST', url, data = data, headers = headers)
+prepared = s.prepare_request(req)
+r = s.send(prepared)
+print(r.text)
