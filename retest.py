@@ -7,4 +7,18 @@ print(r)
 print(r.group())
 print(r.span())
 
+content = 'Hello 1234567 World_This is a Regex Demo'
+r = re.match('^Hello\s(\d+)\sWorld', content)
+print(r)
+print(r.group())
+print(r.group(1))
+print(r.span())
+
+
+content = 'Hello 123 4567 World_This is a Regex Demo'
+r = re.match('^Hello.*Demo$', content)
+print(r)
+print(r.group())
+print(r.span())
+
 
