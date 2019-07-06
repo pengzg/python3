@@ -28,3 +28,9 @@ print(r)
 print(r.group())
 print(r.group(1))
 print(r.span())
+
+content = 'http://weibo.com/comment/kEraCN'
+r1 = re.match('http.*?comment/(.*?)', content)
+r2 = re.match('http.*?comment/(.*)', content)
+print('r1', r1.group(1))
+print('r2', r2.group(1))
