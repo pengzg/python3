@@ -16,7 +16,6 @@ with open(filename,'a') as f:
 		# 对获取到的文本进行解析
 		soup = BeautifulSoup(wbdata,'lxml')
 		# 从解析文件中通过select选择器定位指定的元素，返回一个列表
-		#news_titles = soup.select("div.content span")
 		news_titles = soup.select("div.movie_list ul li a h3")
 
 		for n in news_titles:
