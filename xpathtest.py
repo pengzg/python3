@@ -21,3 +21,18 @@ print(r.decode('utf-8'))
 html = etree.parse('./test.html', etree.HTMLParser())
 r = html.xpath('//*')
 print(r)
+
+html = etree.parse('./test.html', etree.HTMLParser())
+r = html.xpath('//li')
+print(r)
+print(r[0])
+
+html = etree.parse('./test.html', etree.HTMLParser())
+r = html.xpath('//li/a')
+print(r)
+
+html = etree.parse('./test.html', etree.HTMLParser())
+r = html.xpath('//ul//a')
+print(r)
+r = html.xpath('//ul/a')
+print(r)
