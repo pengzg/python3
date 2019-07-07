@@ -36,3 +36,41 @@ r = html.xpath('//ul//a')
 print(r)
 r = html.xpath('//ul/a')
 print(r)
+
+r = html.xpath('//a[@href="link4.html"]/../@class')
+print(r)
+
+
+r = html.xpath('//a[@href="link4.html"]/parent::*/@class')
+print(r)
+
+r = html.xpath('//li[@class="item-0"]')
+print(r)
+
+
+r = html.xpath('//li[@class="item-0"]/text()')
+print(r)
+
+r = html.xpath('//li[@class="item-0"]/a/text()')
+print(r)
+
+r = html.xpath('//li[@class="item-0"]//text()')
+print(r)
+
+r = html.xpath('//li/a/@href')
+print(r)
+
+
+text = '''
+<li class="li li-first"><a href="link.html">first item</a></li>
+'''
+html = etree.HTML(text)
+r = html.xpath('//li[contains(@class, "li")]/a/text()')
+print(r)
+
+text = '''
+<li class="li li-first" name="item"><a href="link.html">first item</a></li>
+'''
+html = etree.HTML(text)
+r = html.xpath('//li[contains(@class, "li") and @name="item"]/a/text()')
+print(r)
