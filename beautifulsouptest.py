@@ -256,3 +256,9 @@ print(type(soup.find_all(name='ul')[0]))
 for ul in soup.find_all(name='ul'):
     print(ul.find_all(name='li'))
 
+
+for ul in soup.find_all(name='ul'):
+    print(ul.find_all(name='li'))
+    for li in ul.find_all(name='li'):
+        print(li.string)
+
