@@ -96,3 +96,19 @@ print(parents)
 
 parent = items.parents('.wrap')
 print(parent)
+
+li = doc('.list .item-0.active')
+print(li.siblings())
+
+
+li = doc('.list .item-0.active')
+print(li.siblings('.active'))
+
+print('==================5555555555555555====================')
+
+
+
+
+
+
+
