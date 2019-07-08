@@ -1,5 +1,8 @@
 #sudo pip3 install pyquery
 from pyquery import PyQuery as pq
+import requests
+
+print('===============11111111111111111===================')
 
 html = '''
 <div>
@@ -15,3 +18,28 @@ html = '''
 
 doc = pq(html)
 print(doc('li'))
+
+
+print('==================2222222222222222=====================')
+doc = pq(url = 'http://cuiqingcai.com')
+print(doc('title'))
+
+doc = pq(requests.get('http://www.cuiqingcai.com').text)
+print(doc('title'))
+
+
+doc = pq(filename='test.html')
+print(doc('li'))
+
+
+
+
+
+
+
+
+
+
+
+
+
