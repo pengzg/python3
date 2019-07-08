@@ -106,7 +106,18 @@ print(li.siblings('.active'))
 
 print('==================5555555555555555====================')
 
+li = doc('.item-0.active')
+print(li)
+print(str(li))
 
+lis = doc('li').items()
+
+print(type(lis))
+
+for li in lis:
+    print(li, type(li))
+
+print('=================66666666666666666666===============')
 
 
 
