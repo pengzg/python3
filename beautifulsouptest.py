@@ -344,4 +344,9 @@ for li in soup.select('li'):
     print('String:', li.string)
 
 
+#推荐使用lxml解析库，必要时使用html.parser。
+#节点选择筛选功能弱但是速度快。
+#建议使用find()或者find_all()查询匹配单个结果或者多个结果。
+#如果对CSS选择器熟悉的话，可以使用select()方法选择
+
 
