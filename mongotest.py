@@ -1,5 +1,6 @@
 import pymongo
-from bson.objectid import ObjectId
+#import bsons
+
 
 #export PATH=/usr/local/mongodb/bin:$PATH
 host = ''
@@ -60,7 +61,8 @@ r = collection.find_one({'name':'Mike'})
 print(type(r))
 print(r)
 
-
+# r = collection.find_one({'_id': ObjectId('5d24553091e5e73e5c2386e5')})
+# print(r)
 
 
 
