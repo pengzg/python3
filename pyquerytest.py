@@ -213,5 +213,39 @@ print(li)
 li.addClass('active')
 print(li)
 
+html = '''
+<ul class="list">
+     <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+</ul>
+'''
+doc = pq(html)
+li = doc('.item-0.active')
+print(li)
+li.attr('name', 'link')
+print(li)
+li.text('changed item')
+print(li)
+li.html('<span>变换的数据</span>')
+print(li)
+
+html = '''
+<div class="wrap">
+    Hello, World
+    <p>This is a paragraph.</p>
+ </div>
+'''
+doc = pq(html)
+wrap = doc('.wrap')
+print(wrap.text())
+new = wrap.remove('p')
+print(new)
+print(new.text())
+
+
+print('======================888888888888888888======================')
+
+
+
+
 
 
