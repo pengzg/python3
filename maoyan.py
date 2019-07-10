@@ -9,7 +9,9 @@ db = pymysql.connect(host=host, user='root', password=pwd, port=3306, db='spider
 cursor = db.cursor()
 sql = 'CREATE TABLE IF NOT EXISTS maoyan (id VARCHAR(255) NOT NULL, name VARCHAR(255),releasetime VARCHAR(255),  stars VARCHAR(255) , img VARCHAR(255) ,point VARCHAR(255), fraction VARCHAR(255), PRIMARY KEY (id))'
 cursor.execute(sql)
-db.close()
+sql = 'truncate table maoyan'
+cursor.execute(sql)
+#db.close()
 
 offset = ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90']
 #offset = ['0']
@@ -44,5 +46,11 @@ def remain():
             #print(result)
             #print(result[0], result[1], result[2], result[3],result[4], result[5])
             print(result[0], result[1], result[2], result[3], result[4], result[5], result[6])
-
+            sql = 'INSERT INTO maoyan(id, img, name, stars, releasetime, point, fraction ) values(%s, %s, %s, %s, %s, %s,%s)'
+            try:
+                cursor.execute(sql, (result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
+                db.commit()
+            except:
+                db.rollback()
+    db.close()
 remain()
