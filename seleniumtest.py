@@ -3,7 +3,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
- 
+#  浏览器支持
+# browser = webdriver.Chrome()
+# browser = webdriver.Firefox()
+# browser = webdriver.Edge()
+# browser = webdriver.PhantomJS()
+# browser = webdriver.Safari()
+
 browser = webdriver.Chrome()
 try:
     browser.get('https://www.baidu.com')
