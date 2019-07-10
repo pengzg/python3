@@ -1,6 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import pymysql
+
+host = ''
+pwd = ''
+db = pymysql.connect(host=host, user='root', password=pwd, port=3306, db='spiders')
+cursor = db.cursor()
+sql = 'CREATE TABLE IF NOT EXISTS maoyan (id VARCHAR(255) NOT NULL, name VARCHAR(255),releasetime VARCHAR(255),  stars VARCHAR(255) , img VARCHAR(255) ,point VARCHAR(255), fraction VARCHAR(255), PRIMARY KEY (id))'
+cursor.execute(sql)
+db.close()
 
 offset = ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90']
 #offset = ['0']
@@ -27,7 +36,7 @@ def remain():
         url = 'https://maoyan.com/board/4?offset='+i
         print(url)
         pageHtml = get_one_page(url)
-        r = re.findall('<dd>.*<img.*board-img.*src="(.*)".*>.*p.*name">.*a.*>(.*)</p>.*p.*star">(.*)</p>.*releasetime">(.*)</p>.*score.*integer">(.*)</i>.*fraction">(.*)</i>', pageHtml, re.S)
+        # r = re.findall('<dd>.*<img.*board-img.*src="(.*)".*>.*p.*name">.*a.*>(.*)</p>.*p.*star">(.*)</p>.*releasetime">(.*)</p>.*score.*integer">(.*)</i>.*fraction">(.*)</i>', pageHtml, re.S)
         r = re.findall('<dd>.*?board-index.*?>(.*?)</i>.*?data-src="(.*?)".*?name.*?a.*?>(.*?)</.*?star.*?>(.*?)</.*?releasetime.*?>(.*?)</.*?integer.*?>(.*?)</.*?fraction.*?>(.*?)</.*?</dd>', pageHtml, re.S)
         print(r)
         #print(type(r))
