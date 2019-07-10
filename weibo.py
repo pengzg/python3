@@ -1,4 +1,5 @@
 from urllib.parse import urlencode
+from pyquery import PyQuery as pq
 import requests
 
 base_url = 'https://m.weibo.cn/api/container/getIndex?'
@@ -25,3 +26,25 @@ def get_one_page(page):
             return response.json()
     except requests.ConnectionError as e:
         print('Error', e.args)
+
+
+def parse_page(json):
+    if json:
+        items = json.get('data').get('cards')
+        for item in items:
+            item = item.get('mblog')
+            weibo = {}
+            weibo['id'] = item.get('id')
+            weibo['text'] = pq(item.get('text')).text()
+            weibo['comments'] = item.get('comments_count')
+            weibo['reposts'] = item.get('reposts_count')
+            yield weibo
+
+
+
+if __name__ == '__main__':
+    for page in range(1,11):
+        json = get_one_page(page)
+        r = parse_page(json)
+        for r_item in r:
+            print(r_item)
