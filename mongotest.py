@@ -2,8 +2,8 @@ import pymongo
 #import bsons
 
 
-#export PATH=/usr/local/mongodb/bin:$PATH
-host = ''
+
+host = '47.100.10.38'
 client = pymongo.MongoClient(host=host, port=27017)
 print(client)
 db = client.test
@@ -14,7 +14,7 @@ student = {
     'age': 20,
     'gender': 'male'
 }
-r = collection.insert(student)
+r = collection.insert_one(student)
 print(r)
 student1 = {
     'id': '20170104',
@@ -29,7 +29,7 @@ student2 = {
     'age': 21,
     'gender': 'male'
 }
-r = collection.insert([student1, student2])
+r = collection.insert_many([student1, student2])
 print(r)
 student = {
     'id': '20170107',
