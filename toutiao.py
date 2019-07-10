@@ -36,6 +36,7 @@ def get_images(json):
 
 def main(offset):
     json = get_one_page(offset)
+    print(json)
     imgs = get_images(json)
 
     print(imgs)
