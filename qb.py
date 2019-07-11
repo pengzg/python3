@@ -9,7 +9,7 @@ filename = "data.txt"
 with open(filename,'a') as f:
 	for i in range(1,30): 
 		print(i)
-		url = "https://www.697www.com/Html/60/index-"+str(i)+".html"
+		url = "https://www.697www.com/Html/60s/index-"+str(i)+".html"
 		#url = "https://www.qiushibaike.com/imgrank/page/"+str(i)
 
 		wbdata = requests.get(url)
