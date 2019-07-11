@@ -7,7 +7,7 @@ baseUrl = 'https://www.231ta.com';
 filename = "data.txt"
 
 with open(filename,'a') as f:
-	for i in range(1,30): 
+	for i in range(1,300): 
 		print(i)
 		url = baseUrl+"/Html/60/index-"+str(i)+".html"
 		#url = "https://www.qiushibaike.com/imgrank/page/"+str(i)
@@ -29,9 +29,5 @@ with open(filename,'a') as f:
 		items = soup.select("div.movie_list ul li")
 
 		for n in items:
-			print(n.find('h3').get_text())
-			print(baseUrl+n.a.attrs['href'])
-
-			# f.write(n.a.attrs['href'])
-
-			# f.write(n.select('a h3')[0].get_text()+"\n")
+			f.write(n.find('h3').get_text())
+			f.write(baseUrl+n.a.attrs['href'])
