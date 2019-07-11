@@ -29,5 +29,5 @@ with open(filename,'a') as f:
 		items = soup.select("div.movie_list ul li")
 
 		for n in items:
-			f.write(n.find('h3').get_text())
-			f.write(baseUrl+n.a.attrs['href'])
+			f.write(n.find('h3').get_text()+'\n')
+			f.write(baseUrl+n.a.attrs['href']+'\n')
