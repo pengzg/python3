@@ -2,7 +2,7 @@
 import requests;
 from bs4 import BeautifulSoup
 
-baseUrl = 'https://www.231ta.com';
+baseUrl = 'https://www.231ta.com'
 
 filename = "data.txt"
 
