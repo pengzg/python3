@@ -6,3 +6,8 @@ r = tesserocr.image_to_text(image)
 print(r)
 
 print(tesserocr.file_to_text('./images/code.jpg'))
+
+print(tesserocr.file_to_text('./images/image.png'))
+
+
+
