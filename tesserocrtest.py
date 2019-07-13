@@ -19,7 +19,7 @@ for i in range(256):
     else :
         table.append(1)
 image = img.point(table, '1')
-image.show()
+# image.show()
 res = tesserocr.image_to_text(image)
 print(res)
 
