@@ -2,6 +2,7 @@
 import scrapy
 from pyquery import PyQuery as pq
 from tencent.items import NewsItem
+from bs4 import BeautifulSoup
 
 class NewsSpider(scrapy.Spider):
     name = 'news'
@@ -11,15 +12,21 @@ class NewsSpider(scrapy.Spider):
     # start_urls = ['http://quotes.toscrape.com/']
 
     def parse(self, response):
-        # print('====='+response+'================')
-        newsList = response.css('.yw-list li')
-        print(newsList)
-        for news in newsList:
-            print(news.css('a::text').extract_first())
-        # newsList = doc('.yw-list li')
-        # for ite in newsList:
-        #     item = NewsItem()
-        #     item['title'] = ite.find('a').text()
-        #     print(item)
-        # scrapy.Request(url=start_urls, callback=self.parse)
+        #======
+        soup = BeautifulSoup(response.text)
+        titles = soup.select('.yw-list li')
+        for title in titles:
+            print('title->'+title.find('a').get_text()+'\n')
+            print('link->'+title.find('a').attrs['href']+'\n')
+        #======
+        
+
+        #======
+        # newsList = response.css('.yw-list li')
+        # print(newsList)
+        # for news in newsList:
+        #     print(news.css('a::text').extract_first())
+        #======
+
+        
         
