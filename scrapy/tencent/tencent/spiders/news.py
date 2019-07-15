@@ -12,8 +12,10 @@ class NewsSpider(scrapy.Spider):
 
     def parse(self, response):
         # print('====='+response+'================')
-        news = response.css('.yw-list')
-        print(news)
+        newsList = response.css('.yw-list li')
+        print(newsList)
+        for news in newsList:
+            print(news.css('a::text').extract_first())
         # newsList = doc('.yw-list li')
         # for ite in newsList:
         #     item = NewsItem()
