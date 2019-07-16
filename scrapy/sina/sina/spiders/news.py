@@ -13,7 +13,9 @@ class NewsSpider(scrapy.Spider):
         print(type(response))
         doc = pq(response.text)
         newsList = doc('.list_14 li a').items()
+        print(type(newsList))
         for news  in newsList:
             print(news.text()+'\n')
             print(news.attr['href']+'\n')
+        
         
