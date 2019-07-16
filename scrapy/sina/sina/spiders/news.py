@@ -12,9 +12,10 @@ class NewsSpider(scrapy.Spider):
     def parse(self, response):
         print(type(response))
         doc = pq(response.text)
+        print(len(doc('.list_14 li a')))
         newsList = doc('.list_14 li a').items()
         print(type(newsList))
-        for news  in newsList:
+        for news in newsList:
             print(news.text()+'\n')
             print(news.attr['href']+'\n')
         
