@@ -16,8 +16,8 @@ class CommunitySpider(scrapy.Spider):
 
     def parse(self, response):
 
-        host = '182.92.180.219'
-        pwd = 'SCrLzWZUj1Iz7ZUbAzYU'
+        host = ''
+        pwd = ''
         db = pymysql.connect(host=host, user='root', password=pwd, port=3306, db='sqhz_dev')
         cursor = db.cursor()
         print(type(response))
