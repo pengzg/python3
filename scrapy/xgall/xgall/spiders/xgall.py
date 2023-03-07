@@ -9,8 +9,8 @@ import pymysql
 class XgallSpider(scrapy.Spider):
     name = 'xgall'
     allowed_domains = ['qq.com']
-    # start_urls = ['https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5']
-    start_urls = ['https://news.qq.com//zt2020/page/feiyan.htm#charts']
+    start_urls = ['https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5&callback=callback']
+    # start_urls = ['https://news.qq.com//zt2020/page/feiyan.htm#charts']
     # allowed_domains = ["quotes.toscrape.com"]
     # start_urls = ['http://quotes.toscrape.com/']
 
